@@ -37,37 +37,67 @@
 
 \begin{multicols*}{2}
 \subsection*{Wprowadzenie}
-GG PWr - \textbf{Giełda Grup PWr} - 
+GG PWr - \textbf{Giełda Grup PWr} - portal/forum stworzone dla studentów Politechniki Wrocławskiej
+w celu ułatwienia wymianą grup zajęciowych między studentami. 
 
 \subsection*{Zakres projektu}
 \noindent\textbf{Musi mieć}
-\begin{itemize}
+\begin{itemize}[itemsep=3pt, parsep=0pt]
     \item System rejestracji i logowania
-    \item Tworzenie, edycja i usuwanie postów o grupach
-    \item Możliwość filtrowania 
+    \item Tworzenie, edycja i usuwanie postów
+    \item Możliwość filtrowania postów.
     \item Pobrania kalenadrza zajęć!
     \item Walidacja 
     \item Usuwanie postów po danym terminie
-    \item Chat user
+    \item Messenger wiadomości pomiędzy użytkownikami
     \item Podział na role
 \end{itemize}
 
 \noindent\textbf{Powinien mieć}
-\begin{itemize}
-    \item Resotowanie hasła i mfa
-    \item Template maila do porwadzących
+\begin{itemize}[itemsep=3pt, parsep=0pt]
+    \item Resotowanie hasła
+    \item Multi Factor Authentication - mfa
+    \item Ustandaryzowane maile do prowadzących
+    \item Zgłaszanie i Moderacja treści
+    \item Limit aktywnych ogłoszeń na użytkownika
+    \item System opinii użytkowników
 \end{itemize}
 
 \noindent\textbf{Mogłoby być}
-\begin{itemize}
-    \item Auth Google i Usos
+\begin{itemize}[itemsep=3pt, parsep=0pt]
+    \item Autoryzacja Googla
+    \item Autoryzacja Usos
+    \item Grupowe wymiany
 \end{itemize}
-
 
 \noindent\textbf{Nie będzie miał}
-\begin{itemize}
+\begin{itemize}[itemsep=3pt, parsep=0pt]
     \item Hashowania wiadomości
 \end{itemize}
+
+\subsection*{Zastosowanie praktyczne}
+\noindent\textbf{1. Grupa docelowa}
+\begin{enumerate}
+    \item Głównym beneficjentem - student PWr chcący zmienić grupy ćwiczeniowe, labolatoryjne i projektowe
+    \item Beneficjent pośredni - prowadzący grup kożystają na ustandaryzowanym formacie wymian między grupami
+\end{enumerate}
+\noindent\textbf{2. Scenariusze użycia}
+\begin{itemize}[itemsep=4pt,parsep=0pt]
+    \item Student A będący w grupie zajeciowej w poniedziałek o 7:30 zamieszcza ogłoszenie o chęci zamiany na czwartek 11:15. System umożliwia odnalezienie Studenta B, który ma odwrotne preferencje.
+    \item Po znalezieniu pary do wymiany, aplikacja generuje gotową wiadomość e-mail ze wszystkimi wymaganymi danymi obu studentów (kody kursów, numery grup, numery indeksów), redukując ryzyko błedów.
+\end{itemize}
+\begin{center}
+    \hspace*{40pt}\includegraphics[width=\linewidth]{fig/wykres.png}
+    Picture 1: Schemat blokowy działania portalu
+
+\end{center}
+
+\noindent\textbf{3. Korzyści z wdrożenia rozwiązania}
+\begin{enumerate}[itemsep=3pt, parsep=0pt]
+    \item Oszczędność czasu: skruócenie poszukiwań z kilku dni do kilku minut/godzin
+    \item Ograniczenie spamu: Wygaszanie postów po pewnym czasie gwarantuje aktywność ofert
+    \item Wsparcie prowadzących: Standaryzowane zgłszenia, ograniczają spam i chaos w mailach.
+\end{enumerate}
 
 \end{multicols*}
 
